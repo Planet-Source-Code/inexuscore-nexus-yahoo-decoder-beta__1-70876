@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nexus Yahoo! Decode (Beta)</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #CCCCCC;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+}
+body {
+	background-color: #006699;
+}
+.style6 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #99CC00;
+}
+a {
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	color: #CCCCCC;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+.style7 {color: #FFFFFF}
+.style8 {
+	color: #99CC00;
+	font-weight: bold;
+}
+-->
+</style></head>
+
+<body>
+<table width="700" height="98" border="0" align="center">
+  <tr>
+    <td height="28"><div align="center" class="style6">Nexus Yahoo! Decoder (Beta) </div></td>
+  </tr>
+  <tr>
+    <td height="20"><div align="center">INexusCore, Inc. &copy;2008 All Rights Reserved </div></td>
+  </tr>
+  <tr>
+    <td height="20"><div align="center"><a href="mailto:inexuscore@gmail.com" target="_blank">inexuscore@gmail.com</a></div></td>
+  </tr>
+  <tr>
+    <td height="20"><p>&nbsp;</p>
+    <p>Welcome to Nexus Yahoo! Decoder (Beta)</p>
+    <p>Here i'll talk about some stuff you should maybe know before using this program.</p>
+    <p>Since there are some programs for decoding and reading Yahoo! Messenger archives offline, i decided to make another example and put it FREE on the net. i may decide to put the source code as open source later. well the program is easy to use you just need to remember some simple rules.</p>
+    <p>First of all, you have to specify the root directory for the program, in order to read available profiles, botts and YM archives and then to decode them. if you specify an invalid path, you won't be able to do the decoding. we're assuming that your Yahoo! Messenger is installed at the default directory path, which will be something like this:</p>
+    <p>&quot;C:\Program Files\Yahoo!\Messenger\Profiles\&quot;</p>
+    <p>Thus you can specify the root directory by clicking the Browse buton at top of the form which will show you a dialog box to select your directory. </p>
+    <p>Second of all, you have to notice that while decoding an archive file, you cannot open another archive file for decoding or trying to save one. you'll be informed by MessageBoxes from the program according to your actions. also you can see the decoding process in percentage at the bottom of the screen, in a status bar. You can copy the selected text to memory clipboard and you can re-load the selected archive file by clicking the Refresh button in the main toolbar. </p>
+    <p>Another thing is that you can save your conversations in three formats, HTML Documents, Text Documents and RTF Documents. to do so, first select an archive file to decode, then you can choose File\Save or click on the Save button on the main toolbar. then a dialog box appears, and asks you for the file name and file type. select your desired file format and file name and just click save.</p>
+    <p>Now let's talk some about YM Decoded Archives:</p>
+    <p>well, i've seen some algorithms in attempt to decode YM archives. the point is YM archives are not encrypted, rather they have just been XOR'd with your yahoo ID. and then saved in *.dat file format. some of these algorithms (which you can find on the net) will not work properly. i'll give you a simple hint on coded archive files, and im sure wise programmers might find out how to decode these files by reading this.</p>
+    <p>Well condiser im having a conversation on Yahoo! Messenger with my yahoo! id : &quot;inexuscore&quot; with one friend with his yahoo! id : &quot;james_crack001&quot;. yahoo! messenger will simply start a loop through my conversation text and simply XOR every single character with a single character from my yahoo! id. consider this example:</p>
+    <p class="style7">Yahoo! ID: inexuscore</p>
+    <p class="style7">Text: Hello!</p>
+    <p>The loop will start from &quot;i&quot; which is the first character of my yahoo! id im having a conversation with, and  the first character of my conversation text  is &quot;H&quot;. so these two will be XOR'd together and the result will be saved in a *.dat file. and this loops go's on 'till the end of conversation text. but just notice that if it reaches the last character of my yahoo! id (inexuscore), which is &quot;e&quot;, it will start again from the first character and continue the XOR'ing process. You may also have to know that *.dat files are text-based files so reading it's contents will be easy. </p>
+    <p>Another important thing is how to decode the Date-Time from coded archives ?</p>
+    <p>Well i've seen some attempts over internet, but here's my tip. if you just open a coded archive file as binary, and then look at the first three bytes of it's contents, you will notice that these three bytes are where the Date-Time data is stored. and the decoding process is the same as i've mentioned above.</p>
+    <p>Well i hope you find this little program useful and enjoy it. but just remember in order to use this program, the Archiving option has be enabled from yahoo! messenger. i might add some other options including enabling archiving for profiles to this program in near future. and another option to open single archive files.</p>
+    <p>Thanks for using this software, feel free to send comments on my mailbox at <a href="mailto:inexuscore@gmail.com" target="_blank">inexuscore@gmail.com  </a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p class="style8">INexusCore</p>
+    <p>INexusCore, Inc. &copy;2008</p>
+    <p>All Rights Reserved  </p></td>
+  </tr>
+</table>
+</body>
+</html>
